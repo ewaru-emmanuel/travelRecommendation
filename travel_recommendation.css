@@ -1,0 +1,213 @@
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Light gray background */
+}
+
+/* Navigation Bar styles */
+.navbar {
+    background-color: #007bff; /* Blue navbar */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Align navigation items and search bar */
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.navbar ul li a:hover {
+    color: #f0f0f0; /* Lighter color on hover */
+}
+
+/* Search Bar styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745; /* Green button */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for button color */
+}
+
+.search-bar button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Background Image styles */
+.background-image {
+    background-image: url('https://picsum.photos/1200/800'); /* Placeholder image from Lorem Picsum */
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Adjust the height as needed */
+}
+
+/* Explore Dream Destinations text */
+.explore-text {
+    position: absolute;
+    top: 90px; 
+    left: 20px; 
+    font-size: 36px;
+    color: #fff;
+    border: red solid;
+}
+
+/* Line styles */
+.explore-text .line {
+    display: block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.explore-text .line:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    
+}
+/* Search Results Section styles */
+.search-results {
+    position: absolute;
+    top: 250px; /* Adjust the top position as needed */
+    left: 50%; /* Position at the center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 50%; /* Half the width of the page */
+    max-width: 600px; /* Maximum width for responsiveness */
+    border: 2px solid red; /* Red border */
+    padding: 20px; /* Add padding inside the border */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.page-content {
+    position: absolute;
+    top: 250px; /* Adjust the top position as needed */
+    left: 70%; /* Position at the center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 50%; /* Half the width of the page */
+    max-width: 600px; /* Maximum width for responsiveness */
+    border: 2px solid red; /* Red border */
+    padding: 10px; /* Add padding inside the border */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.content{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.content h1{
+    position: absolute;
+    top: 250px; 
+     /* Half the width of the page */
+    max-width: 600px; /* Maximum width for responsiveness */
+    border: 2px solid red; /* Red border */
+    padding: 10px; /* Add padding inside the border */
+    box-sizing: border-box;
+}
+
+
+/* About Us Page Styles */
+.page-content {
+    padding: 50px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-member {
+    width: calc(33.33% - 20px); /* 33.33% width with some margin between elements */
+    margin-bottom: 40px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    margin: 0;
+}
+
+/* Recommendations */
+.recommendations {
+    display: none; /* Initially hide the recommendations */
+    position: absolute;
+    top: 100px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Ensure it's above other elements */
+}
+
+.recommendations .item {
+    margin-bottom: 20px;
+}
+
+.recommendations img {
+    max-width: 100%;
+    height: auto;
+}
+
+.recommendations .description h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.recommendations .description p {
+    font-size: 14px;
+    color: #666;
+}
+
+

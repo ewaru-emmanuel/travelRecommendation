@@ -1,0 +1,26 @@
+/* Add this to your contact-us.css file */
+
+/* Contact Us Content */
+.page-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+}
+
+.contact-form {
+    margin-left: 20px; /* Add space between heading and form */
+}
+
+/* Background Image styles */
+.background-image {
+    background-image: url('https://picsum.photos/1200/800'); /* Placeholder image from Lorem Picsum */
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Adjust the height as needed */
+}

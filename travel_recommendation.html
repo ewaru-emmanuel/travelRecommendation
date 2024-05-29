@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-x+dcLuw6+XXcypFicb6fNv0MzUpVvFpR/uyuM3rl2+xL6UaTSA3ZzavuBfqYkxWaxlZPNVY6Kf2yhWbvcp+1bA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <!-- Social Media Icons -->
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search destinations or keywords">
+            <button id="searchButton">Search</button>
+        </div>
+        <!-- Clear Button -->
+        <button id="clearButton">Clear</button>
+    </nav>
+
+    <!-- Explore Dream Destinations -->
+    <div class="explore-text">
+        <span class="line"></span>
+        <span class="line">Explore</span>
+        <span class="line">Dream</span>
+        <span class="line">Destinations</span>
+    </div>
+
+    <!-- Search Results Section -->
+    <section class="search-results" id="searchResults"></section>
+
+    <div class="recommendations">
+      <div id="beachRecommendation" class="recommendation"></div>
+      <div id="templeRecommendation" class="recommendation"></div>
+      <div id="countryRecommendation" class="recommendation"></div>
+    </div>
+    
+    <!-- Background Image -->
+    <div class="background-image"></div>
+
+    <!-- JavaScript for Search Functionality -->
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
